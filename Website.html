@@ -9,9 +9,19 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="border-bottom">
-        <h1 class="text-center mt-2"> Learn about snails and sea cucumbers! </h1>  
-    </header>
+        <header class="p-3 text-bg-dark">
+            <div class="container-fluid">
+              <div class="row">
+                <ul class="nav col-3 mt-1">
+                  <li><a href="./Two Other Websites/Snails.html" class="nav-link px-2 text-white">Snails</a></li>
+                  <li><a href="./Two Other Websites/Sea Cucumbers.html" class="nav-link px-2 text-white">Sea Cucumbers</a></li>
+                  <li><a href="#Sign-Up" class="nav-link px-2 text-white">Sign-Up</a></li>
+                </ul>
+
+            <h1 class="text-center col-6"> Learn about Snails and Sea Cucumbers!</h1>
+                </div>
+            </div>
+        </header> 
 <div class="container shadow">
     <div class="row m-5">
         <div class="col-5">
@@ -26,14 +36,14 @@
                     
                     Finally, some species of snails are considered pests because they can damage crops and gardens. However, other species are used in cuisine and are considered a delicacy in many parts of the world, such as escargot in France. <br/>
                     <br/>
-                    <a href="./Two Other Websites/Snails.html"> Click here for facts about specific species! </a>
+                    <a class= "text-dark" href="./Two Other Websites/Snails.html"> Click here for facts about specific species! </a>
                 </p>
             </article>
         </div>
         </div>
         <div class="col-7">
             <div class="container mt-5">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./pictures/snails one.jpg" class="d-block w-100" alt="...">
@@ -45,11 +55,11 @@
                             <img src="./pictures/snails three.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -70,7 +80,7 @@
                     
                     Sea cucumbers also play an important role in marine ecosystems, as they help to recycle nutrients and maintain sediment balance on the ocean floor. <br/>
                     <br/>
-                <a href="./Two Other Websites/Sea Cucumbers.html"> Click here for facts about specific species! </a>
+                <a class= "text-dark" href="./Two Other Websites/Sea Cucumbers.html"> Click here for facts about specific species! </a>
             </p>
         </article>
             </div>
@@ -102,17 +112,51 @@
         </div>
     </div>
 </div>
-<footer class="mt-5 text-center border-top">
-    <div class="container">
-        <div class="row mt-2">
-            <div class="col-6">
-                <p>Texts generated with <a href="https://chat.openai.com/chat">GPT-3</a></p>
-            </div>
-            <div class="col-6">
-                <p>Images found on Google</p>
+<footer class="bg-light text-center border-top">
+    <div class="container p-4 pb-0">
+      <section class="">
+        <form action="">
+          <div class="row d-flex justify-content-center">
+            <p class="pt-2">
+                <strong id="Sign-Up">Sign up for our newsletter to get sent daily facts about snails or sea cucumbers!</strong>
+              </p>
+            <div class="row"> 
+                <div class="container col-7">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else. (Probably)</small>
+                    </div>
+                </div>
+                <div class="container col-7">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <small id="emailHelp" class="form-text text-muted">Make sure your password is secure!</small>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-auto mt-4"> 
+              <button type="submit" class="btn btn-primary mb-4">
+                Subscribe
+              </button>
+            </div>  
+          </div>   
+        </form>
+      </section>  
+    </div>
+    <div class="text-center p-3 border-top text-bg-dark">
+        <div class="container">
+            <div class="row mt-1">
+                <div class="col-6">
+                    <p>Texts generated with <a class= "text-light" href="https://chat.openai.com/chat">GPT-3</a></p>
+                </div>
+                <div class="col-6">
+                    <p>Images found on Google</p>
+                </div>
             </div>
         </div>
     </div>
-</footer>
+  </footer>
 </body>
 </html>
